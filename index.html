@@ -52,7 +52,7 @@
 </div>  
   
 <!-- 地图容器 -->  
-<div id="map"></div>  
+<div id="map1"></div>  
   
 <!-- 8月4日行程内容 -->  
 <div class="date">8月4日</div>  
@@ -77,6 +77,14 @@
     上车点：8/10号线北土城站C口<br>  
     发车时间：7/8/9/10/11/12点  
 </div>  
+
+<div class="detail">  
+    中国人民革命军事博物馆<br>
+    地址：北京市海淀区复兴路9号<br>
+</div>  
+
+<!-- 地图容器 -->  
+<div id="map2"></div>  
   
 <div class="date">8月6日</div>  
 <div class="detail">  
@@ -86,18 +94,34 @@
 <div class="detail">  
     酒店信息：<br>  
     ① 西安绿地假日酒店<br>  
-    地址：请提供具体地址<br>  
+    地址：陕西省西安市高新区锦业路5号<br> 
+    电话：029 6868 9999<br>
     <br>  
     ② 西安阳光城希尔顿花园酒店<br>  
-    地址：请提供具体地址  
+    地址：陕西省西安市高新区博士路60号<br>
+    电话：029 8819 0999
 </div>
+
+<!-- 地图容器 -->  
+<div class="datail">①酒店</div>
+<div id="map3"></div>  
+
+<!-- 地图容器 --> 
+<div class="datail">②酒店</div>
+<div id="map4"></div>  
+
+<div class="datail">
+    大唐不夜城<br>
+    地址：陕西省西安市雁塔区慈恩路46号<br>
+</div>
+
     
 <!-- 初始化地图的JavaScript代码 -->  
 <script type="text/javascript">  
     // 初始化地图函数  
     function initMap() {  
         // 创建地图实例  
-        var map = new BMap.Map("map");  
+        var map = new BMap.Map("map1");  
         // 设置地图中心点坐标  
         var point = new BMap.Point(116.281433,39.9443054);  
         // 初始化地图，设置中心点坐标和地图级别  
@@ -108,6 +132,54 @@
     // 确保DOM完全加载和解析后执行initMap函数  
     window.onload = initMap;  
 </script>  
+
+<script type="text/javascript">  
+    // 初始化地图函数  
+    function initMap() {  
+        // 创建地图实例  
+        var map = new BMap.Map("map2");  
+        // 设置地图中心点坐标  
+        var point = new BMap.Point(116.330207,39.914976);  
+        // 初始化地图，设置中心点坐标和地图级别  
+        map.centerAndZoom(point, 18);  
+        // 启用地图拖拽事件     
+    }  
   
+    // 确保DOM完全加载和解析后执行initMap函数  
+    window.onload = initMap;  
+</script>  
+
+<script type="text/javascript">  
+    // 初始化地图函数  
+    function initMap() {  
+        // 创建地图实例  
+        var map = new BMap.Map("map3");  
+        // 设置地图中心点坐标  
+        var point = new BMap.Point(108.890295,34.200412);  
+        // 初始化地图，设置中心点坐标和地图级别  
+        map.centerAndZoom(point, 19);  
+        // 启用地图拖拽事件     
+    }  
+  
+    // 确保DOM完全加载和解析后执行initMap函数  
+    window.onload = initMap;  
+</script>  
+
+<script type="text/javascript">  
+    // 初始化地图函数  
+    function initMap() {  
+        // 创建地图实例  
+        var map = new BMap.Map("map4");  
+        // 设置地图中心点坐标  
+        var point = new BMap.Point(108.875059,34.174654);  
+        // 初始化地图，设置中心点坐标和地图级别  
+        map.centerAndZoom(point, 19);  
+        // 启用地图拖拽事件     
+    }  
+  
+    // 确保DOM完全加载和解析后执行initMap函数  
+    window.onload = initMap;  
+</script>  
+    
 </body>  
 </html>
